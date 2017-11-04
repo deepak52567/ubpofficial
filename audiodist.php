@@ -15,6 +15,8 @@
 		background: #e91e63;
 	}
   </style>
+
+  
   <body>
     <?php
   	include('header.php');
