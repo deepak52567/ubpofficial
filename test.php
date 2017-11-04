@@ -14,10 +14,6 @@
             return $data;
         }
     ?>
-
-
-
-
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         Name:<input type="text" name="name"><br>
         Email:<input type="text" name="email"><br>
