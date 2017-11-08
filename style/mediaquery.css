@@ -51,15 +51,16 @@
     .filler .container.service-pg .item.common-pg-layout .right-container .distributers {
         margin-top: 1em;
     }
+
     .filler .container.audio-sam .item {
         margin: 5% 15%;
     }
 }
 
 @media (max-width: 875px) {
-  .filler .container.audio-sam .item {
-      margin: 5% 10%;
-  }
+    .filler .container.audio-sam .item {
+        margin: 5% 10%;
+    }
 }
 
 @media (max-width: 760px) {
@@ -147,18 +148,26 @@
     .filler .container.service-pg .item.common-pg-layout.straight .right-container>h2 {
         margin-top: 1em;
     }
+
     .filler .container.service-pg .item.common-pg-layout .right-container .distributers {
         justify-content: space-around;
     }
+
     .filler .container.audio-sam {
         grid-template-columns: 100%;
         grid-gap: 0;
     }
+
     .filler .container.audio-sam .item {
         margin: 5% 20%;
     }
+
     .fullscreen-background .video_overlay {
         display: none;
+    }
+
+    .filler .container.gallery-pg .item {
+        width: 46.8%;
     }
 }
 
@@ -166,6 +175,7 @@
     .fullscreen-background .container .company-tagline {
         font-size: 2.5rem;
     }
+
     .filler .container .item .detail .button .material-icons {
         font-size: 1.4rem;
     }
@@ -185,27 +195,33 @@
     .filler .container.service {
         grid-template-columns: 49% 49%;
     }
+
     .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
         font-size: 4.5rem;
     }
+
     .filler .container.audio-sam .item {
         margin: 5% 15%;
     }
 }
 
 @media (max-width: 425px) {
-    header .hamburger-menu>i{
+    header .hamburger-menu>i {
         font-size: 1.7rem !important;
     }
-    header .top-header-subs>i{
+
+    header .top-header-subs>i {
         font-size: 1.7rem !important;
     }
+
     .fullscreen-background .container .company-name {
         font-size: 1.3rem;
     }
+
     .fullscreen-background .container .company-tagline {
         font-size: 2rem;
     }
+
     .filler .container {
         grid-template-columns: 100%;
     }
@@ -237,11 +253,24 @@
     .filler .view-all-button {
         padding: 0.7em;
     }
+
     .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
         font-size: 4rem;
     }
+
     .filler .container.audio-sam .item {
         margin: 5% 10%;
+    }
+
+    .filler .container.gallery-pg {
+        flex-direction: column;
+        max-height: 100%;
+    }
+
+    .filler .container.gallery-pg .item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 4%;
     }
 }
 
@@ -274,6 +303,7 @@
     .fullscreen-player .close-button {
         width: 95%;
     }
+
     .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
         font-size: 3rem;
     }

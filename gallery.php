@@ -22,31 +22,46 @@ include('config.php');
           </div>
           <hr>
         </div>
-        <div class="container gallery-pg">
-    			<div class='item' onclick="openModal();currentSlide(1)">
+        <div class="container showcase-pg">
+    			<div class='item'>
     				<img src='/img/gallery/jhoothewadein/1.jpg'/>
     			</div>
-    			<div class='item' onclick="openModal();currentSlide(2)">
+    			<div class='item'>
     				<img src='/img/gallery/jhoothewadein/2.jpg'/>
     			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/3.jpg'/>
+          <div class='item'>
+    				<img src='/img/gallery/jhoothewadein/1.jpg'/>
     			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
+          <div class='item'>
     				<img src='/img/gallery/jhoothewadein/4.jpg'/>
     			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/1.jpg'/>
-    			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/2.jpg'/>
-    			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/3.jpg'/>
-    			</div>
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/2.jpg'/>
+          </div>
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/4.jpg'/>
+          </div>            
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/2.jpg'/>
+          </div>
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/1.jpg'/>
+          </div>                  
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/2.jpg'/>
+          </div>
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/4.jpg'/>
+          </div>            
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/1.jpg'/>
+          </div>
+          <div class='item'>
+            <img src='/img/gallery/jhoothewadein/2.jpg'/>
+          </div>                               
   		</div>
-    </section>
-	  <section id="myModal" class="fullscreen-player">
+    </section>    
+<!-- 	  <section id="myModal" class="fullscreen-player">
 		<div class="close-button">
 			<i class="material-icons" onclick="$('.fullscreen-player').css('display', 'none');">close</i>
         </div>
@@ -57,10 +72,16 @@ include('config.php');
 			<div class="mySlides">
 				<img src="/img/gallery/jhoothewadein/2.jpg">
 			</div>
+            <div class="mySlides">
+        <img src="/img/gallery/jhoothewadein/3.jpg">
+      </div>
+      <div class="mySlides">
+        <img src="/img/gallery/jhoothewadein/4.jpg">
+      </div>
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
-	  </section>
+	  </section> -->
     </div>
     <?php include('footer.php'); ?>
 	<script>

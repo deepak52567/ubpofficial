@@ -458,11 +458,11 @@ header .top-header-subs .last {
 /* YoutubePlayer base @ all End*/
 /*Card Layout @ Start*/
 .card {
-  background: white;
-  border-radius: 3px;
-  margin-bottom: 8%;
-  transition: all 0.2s ease-out;
-  box-shadow: 0 1px 20px #BDBDBD;
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 8%;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 1px 20px #BDBDBD;
 }
 
 /*Card Layout @ End*/
@@ -485,7 +485,7 @@ header .top-header-subs .last {
 }
 
 .filler:nth-child(2n) {
-  background: #F5F5F5;
+    background: #F5F5F5;
 }
 
 .filler .titlecontainer {
@@ -530,6 +530,7 @@ header .top-header-subs .last {
     margin-bottom: 8%;
     transition: all 0.2s ease-out;
     box-shadow: 0 1px 20px #BDBDBD;
+    overflow: hidden;
     /* border: 1px solid #cccccc; */
 }
 
@@ -802,8 +803,8 @@ header .top-header-subs .last {
     margin: 5% 20%;
 }
 
-.filler .container.audio-sam .item .icon .material-icons{
-  padding: 0.8em 0.4em;
+.filler .container.audio-sam .item .icon .material-icons {
+    padding: 0.8em 0.4em;
 }
 
 .filler .container.audio-sam .item .detail audio {
@@ -846,8 +847,10 @@ header .top-header-subs .last {
     cursor: pointer;
 }
 
-.filler .container.showcase-pg .item img {
+.filler .container.showcase-pg .item>img {
     border-bottom: 0;
+    border-radius: inherit;
+    transform: scale(1.5);
 }
 
 .filler .container.showcase-pg .item .detail {
@@ -913,6 +916,7 @@ header .top-header-subs .last {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /* Gallery filler @ page End*/
 /* Gallery filler @ index-page Start*/
 .filler .container.about {
@@ -945,15 +949,3 @@ header .top-header-subs .last {
 }
 
 /* Gallery filler @ index-page End*/
-.filler .container.gallery-pg {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: calc(100vh + 20vh);
-}
-
-.filler .container.gallery-pg .item {
-  margin-bottom: 2%;
-  margin-right: 2%;
-  width: 23.5%;
-}
