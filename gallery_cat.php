@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include('config.php');
+$gallery_dir = 'img/gallery/';
 ?>
 <html lang="en">
   <?php include('head.php'); ?>
@@ -23,18 +24,14 @@ include('config.php');
           <hr>
         </div>
         <div class="container showcase-pg">
-    			<div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/1.jpg'/>
-    			</div>
-    			<div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/2.jpg'/>
-    			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/1.jpg'/>
-    			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/4.jpg'/>
-    			</div>
+          <?php 
+            foreach (new DirectoryIterator($gallery_dir) as $file) {
+              if ($file->isDot()) continue;
+              if ($file->isDir()) {
+                echo "<a class='item' href='bts_main.php'> <img src='/img/gallery/" . $file->getFilename() . "/album_art.jpg'/> <div class='detail'> <div class='left-container'><p class='title'>" . $file->getFilename() . "</p></div></div></a>";
+              }
+            }
+          ?>
   		  </div>
       </section>    
     </div>

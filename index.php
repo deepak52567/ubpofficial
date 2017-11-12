@@ -242,7 +242,7 @@
 			</div>
 		</div>
       <br>
-      <a class="view-all-button" href="/gallery/">VIEW ALL</a>
+      <a class="view-all-button" href="/gallery_cat/">VIEW ALL</a>
 	  </section>
       <section class="filler" id="about">
         <div class="titlecontainer">

@@ -12,7 +12,7 @@
           <nav>
               <a href="/projects/">PROJECTS</a>
               <a href="/services/">SERVICES</a>
-              <a href="/gallery/">GALLERY</a>
+              <a href="/gallery_cat/">GALLERY</a>
               <a href="/about/">ABOUT US</a>
           </nav>
           <a href="#subscribe"  class="top-header-subs">

@@ -7,19 +7,19 @@
           <i class="material-icons">home</i>
           <p>HOME</p>
         </a>
-        <a href="/projects.php">
+        <a href="/projects/">
           <i class="material-icons">photo</i>
           <p>PROJECTS</p>
         </a>
-        <a href="/services.php">
+        <a href="/services/">
           <i class="material-icons">whatshot</i>
           <p>SERVICES</p>
         </a>
-        <a href="/gallery.php">
+        <a href="/gallery_cat/">
           <i class="material-icons">whatshot</i>
           <p>GALLERY</p>
         </a>
-        <a href="/about.php">
+        <a href="/about/">
           <i class="material-icons">info</i>
           <p>ABOUT</p>
         </a>

@@ -24,32 +24,32 @@ include('config.php');
         </div>
         <div class="container showcase-pg">
     			<div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/1.jpg'/>
+    				<img src='/img/gallery/Jhoothe Wadein/1.jpg'/>
     			</div>
     			<div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/2.jpg'/>
+    				<img src='/img/gallery/Jhoothe Wadein/2.jpg'/>
     			</div>
           <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/1.jpg'/>
+    				<img src='/img/gallery/Jhoothe Wadein/1.jpg'/>
     			</div>
           <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/jhoothewadein/4.jpg'/>
+    				<img src='/img/gallery/Jhoothe Wadein/4.jpg'/>
     			</div>
   		  </div>
       </section>    
    	  <section id="myModal" class="fullscreen-player">
     		<div class="modal-content">
     			<div class="mySlides">
-    				<img src="/img/gallery/jhoothewadein/1.jpg">
+    				<img src="/img/gallery/Jhoothe Wadein/1.jpg">
     			</div>
     			<div class="mySlides">
-    				<img src="/img/gallery/jhoothewadein/2.jpg">
+    				<img src="/img/gallery/Jhoothe Wadein/2.jpg">
     			</div>
                 <div class="mySlides">
-            <img src="/img/gallery/jhoothewadein/1.jpg">
+            <img src="/img/gallery/Jhoothe Wadein/1.jpg">
           </div>
           <div class="mySlides">
-            <img src="/img/gallery/jhoothewadein/4.jpg">
+            <img src="/img/gallery/Jhoothe Wadein/4.jpg">
           </div>
           <div class="nav-modal-content">
             <div class="nav-button">
