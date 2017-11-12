@@ -21,7 +21,7 @@
     }
 
     .fullscreen-player .modal-content {
-        width: 80%;
+        width: 70%;
     }
 
     .filler .container.projects-pg {
@@ -54,6 +54,11 @@
 
     .filler .container.audio-sam .item {
         margin: 5% 15%;
+    }
+    
+    .filler .container.gallery-pg {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
     }
 }
 

@@ -39,6 +39,9 @@
         .filler .container .item.mix-master:hover{
           color: #AED581;
         }
+        .filler:nth-child(2n) {
+          background: <script type="text/javascript">document.write(hexcol);</script>;
+        }
     </style>
   <body>
     <header>
@@ -238,6 +241,8 @@
 					</div>
 			</div>
 		</div>
+      <br>
+      <a class="view-all-button" href="/gallery/">VIEW ALL</a>
 	  </section>
       <section class="filler" id="about">
         <div class="titlecontainer">
@@ -272,5 +277,5 @@
 				$('header').css('background', 'none');
 			}
 		});
-	</script>
+   </script> 
 </html>
