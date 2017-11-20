@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
   require_once 'config.php';
-  $tagline = "MIXING & MASTERING";
+  $page_title = $tagline = "MIXING & MASTERING";
   $scrollheader = 'href="#services" data-scroll="services"';
 ?>
 <html lang="en">
@@ -102,7 +102,7 @@
             </div>
             <div class="container audio-sam">
               <div class='item mix-master'>
-                <div class="detail service" style="color: #212121; background: #8bc34a; color: white;"><p><b>UN-MIXED & UN-MASTERED</b><br>SONG: Fire Jatti</p></div>
+                <div class="detail service" style="background: #8bc34a; color: white;"><p><b>UN-MIXED & UN-MASTERED</b><br>SONG: Fire Jatti</p></div>
                 <div class="icon">
                   <i class="material-icons">music_note</i>
                 </div>

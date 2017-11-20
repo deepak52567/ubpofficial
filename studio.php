@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
   include('config.php');
-  $tagline = "RECORDING STUDIO";
+  $page_title = $tagline = "RECORDING STUDIO";
   $scrollheader = 'href="#services" data-scroll="services"';
 ?>
 <html lang="en">

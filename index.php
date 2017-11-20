@@ -3,6 +3,7 @@
 	require_once 'config.php';
 	$tagline = "MUSIC IS NOT WHAT I DO<br>IT'S WHO I AM";
 	$scrollheader = 'href="#projects" data-scroll="projects"';
+  $gallery_dir = 'img/gallery/';  
 ?>
 <html lang="en">
 <head>
@@ -57,10 +58,21 @@
             </div>
           </a>
           <nav>
-              <a href="#projects" data-scroll="projects">PROJECTS</a>
-              <a href="#services" data-scroll="services">SERVICES</a>
-              <a href="#gallery" data-scroll="gallery">GALLERY</a>
-              <a href="#about" data-scroll="about">ABOUT US</a>
+              <a class="nav-link" href="#projects" data-scroll="projects">PROJECTS</a>
+              <div class="nav-link service-hover" href="#services" data-scroll="services">
+                SERVICES
+                <div class="dropdown-content">
+                  <a href="" title="">MUSIC PRODUCTION</a>
+                  <a href="" title="">VIDEO PRODUCTION</a>
+                  <a href="" title="">RECORDING STUDIO</a>
+                  <a href="" title="">MIXING & MASTERING</a>
+                  <a href="" title="">PHOTOGRAPHY</a>                               
+                  <a href="" title="">PROMOTION</a>
+                  <a href="" title="">AUDIO DISTRIBUTION</a>
+                </div>
+              </div>
+              <a class="nav-link" href="#gallery" data-scroll="gallery">GALLERY</a>
+              <a class="nav-link" href="#about" data-scroll="about">ABOUT US</a>
           </nav>
           <a href="#subscribe" data-scroll="contactus" class="top-header-subs">
             <i class="material-icons" style="color: #ffffff; font-size: 2rem;">inbox</i>
@@ -222,28 +234,18 @@
           <hr>
         </div>
         <div class="container showcase-pg">
-			<div class='item'>
-				<img src='/img/tunahitohimg.jpg'/>
-					<div class='detail'>
-						<div class='left-container'>
-							<p class='title'>Tu nahi toh</p>
-                            <p class='sub-title'>Jeffrin</p>
-						</div>
-					</div>
-			</div>
-			<div class='item'>
-				<img src='/img/hqdefault.jpg'/>
-					<div class='detail'>
-						<div class='left-container'>
-							<p class='title'>Tu nahi toh</p>
-                            <p class='sub-title'>Jeffrin</p>
-						</div>
-					</div>
-			</div>
-		</div>
-      <br>
-      <a class="view-all-button" href="/gallery_cat/">VIEW ALL</a>
-	  </section>
+          <?php 
+            foreach (new DirectoryIterator($gallery_dir) as $file) {
+              if ($file->isDot()) continue;
+              if ($file->isDir()) {
+                echo "<a class='item' href='/bts_main.php?bts_folder=" . $file->getFilename() . "'> <img src='/img/gallery/" . $file->getFilename() . "/album_art.jpg'/> <div class='detail'> <div class='left-container'><p class='title'>" . $file->getFilename() . "</p></div></div></a>";
+              }
+            }
+          ?>
+		    </div>
+        <br>
+        <a class="view-all-button" href="/gallery/">VIEW ALL</a>
+      </section>
       <section class="filler" id="about">
         <div class="titlecontainer">
           <div class="title">

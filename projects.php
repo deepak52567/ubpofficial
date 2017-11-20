@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include('config.php');
-  $tagline = "PROJECTS";
+  $page_title = $tagline = "PROJECTS";
   $scrollheader = 'href="#projects" data-scroll="projects"';
 ?>
 <html lang="en">
@@ -12,9 +12,9 @@ include('config.php');
 	include('sidenav.php');
   ?>
     <div class="main">
-  	  <?php
+  	<?php
   		include('fullscreen-player.php');
-  		?>
+  	?>
       <?php
         include('backgroundvideooverlay.php');
       ?>

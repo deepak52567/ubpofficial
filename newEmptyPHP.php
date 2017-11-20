@@ -1,13 +1,10 @@
 <?php
 include 'config.php';
-$dir = 'img/gallery/';
+$dir = 'img/gallery/Jhoothe Wadein/';
 // $files = array_diff(scandir($dir), array('..', '.'));
 // print_r($files);
 foreach (new DirectoryIterator($dir) as $file) {
     if ($file->isDot()) continue;
-
-    if ($file->isDir()) {
-        print $file->getFilename() . '<br />';
-    }
+    print $file->getFilename() . '<br />';
 }
 ?>

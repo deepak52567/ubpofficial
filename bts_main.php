@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <?php
 include('config.php');
+$page_title = $_GET['bts_folder'];
+$bts_folder = 'img/gallery/' . $_GET['bts_folder'] . '/';
 ?>
 <html lang="en">
   <?php include('head.php'); ?>
@@ -18,39 +20,33 @@ include('config.php');
       <section class="filler top-fix" id="gallery">
         <div class="titlecontainer">
           <div class="title">
-            <p>GALLERY</p>
+            <p><?php echo $_GET['bts_folder']; ?></p>
           </div>
           <hr>
         </div>
         <div class="container showcase-pg">
-    			<div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/Jhoothe Wadein/1.jpg'/>
-    			</div>
-    			<div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/Jhoothe Wadein/2.jpg'/>
-    			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/Jhoothe Wadein/1.jpg'/>
-    			</div>
-          <div class='item' onclick="openModal();currentSlide(1)">
-    				<img src='/img/gallery/Jhoothe Wadein/4.jpg'/>
-    			</div>
-  		  </div>
+          <?php 
+            foreach (new DirectoryIterator($bts_folder) as $file) {
+              if ($file->isDot()) continue;
+              echo 
+                "<a class='item' onclick='openModal();currentSlide(1)'>
+                  <img src='" . $bts_folder . $file->getFilename() . "'/>
+                </a>";
+            }
+          ?>
+        </div>        
       </section>    
    	  <section id="myModal" class="fullscreen-player">
-    		<div class="modal-content">
-    			<div class="mySlides">
-    				<img src="/img/gallery/Jhoothe Wadein/1.jpg">
-    			</div>
-    			<div class="mySlides">
-    				<img src="/img/gallery/Jhoothe Wadein/2.jpg">
-    			</div>
-                <div class="mySlides">
-            <img src="/img/gallery/Jhoothe Wadein/1.jpg">
-          </div>
-          <div class="mySlides">
-            <img src="/img/gallery/Jhoothe Wadein/4.jpg">
-          </div>
+    		<div class="modal-content">    		
+          <?php 
+            foreach (new DirectoryIterator($bts_folder) as $file) {
+              if ($file->isDot()) continue;
+              echo 
+                "<div class='mySlides'>
+                  <img src='" . $bts_folder . $file->getFilename() . "'/>
+                </div>";
+            }
+          ?>          
           <div class="nav-modal-content">
             <div class="nav-button">
               <i class="material-icons button" onclick="$('.fullscreen-player').css('display', 'none');" style="font-size: 1.4rem; padding: 0.8em;">close</i>
