@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="left-container">
-                        <img src="img/We Create Artis 2t.png">
+                        <img src="/img/We Create Artis 2t.png">
                     </div>
                 </div>
             </div>
@@ -56,10 +56,10 @@
                               <br><br>Mixing & Mastering is included in all our combos of audio and video production FOC.
                               <br><br><b>For seperate Mixing & Mastering on your track:</b></p>
                         </div>
-                        <a class="view-all-button" href="">Contact Us</a>
+                        <a class="view-all-button" href="/projects.php">Contact Us</a>
                     </div>
                     <div class="left-container">
-                        <img src="img/We Create Artis 2t.png">
+                        <img src="/img/We Create Artis 2t.png">
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                       </div>
                   </div>
                   <div class="left-container">
-                      <img src="img/Music Production(Corrected).png">
+                      <img src="/img/Music Production(Corrected).png">
                   </div>
               </div>
             </div>
@@ -108,7 +108,7 @@
                 </div>
                 <div class='detail service' style="background: white;">
     			  		  <audio controls>
-                    <source src="audio/SampleAudio.mp3">
+                    <source src="/audio/SampleAudio.mp3">
                   </audio>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class='detail service' style="background: white;">
     			  		  <audio controls>
-                    <source src="audio/SampleAudio.mp3">
+                    <source src="/audio/SampleAudio.mp3">
                   </audio>
                 </div>
               </div>

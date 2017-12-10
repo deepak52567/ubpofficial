@@ -3,7 +3,7 @@
 	require_once 'config.php';
 	$tagline = "MUSIC IS NOT WHAT I DO<br>IT'S WHO I AM";
 	$scrollheader = 'href="#projects" data-scroll="projects"';
-  $gallery_dir = '/img/gallery/';
+  $gallery_dir = 'img/gallery/';  
 ?>
 <html lang="en">
 <head>
@@ -50,7 +50,7 @@
             <i class="material-icons md-2" id="open-button-ham" style="display: inline-block; font-size: 2rem;">menu</i>
             <i class="material-icons md-2" id="close-button-ham" style="display: none; font-size: 2rem;">close</i>
           </div>
-          <a href="" class="top-header-logo">
+          <a href="/" class="top-header-logo">
             <p class="ub">UB</p>
             <div class="ub-full">
               <p class="first">URBAN BLUE</p>
@@ -66,7 +66,7 @@
                   <a href="" title="">VIDEO PRODUCTION</a>
                   <a href="" title="">RECORDING STUDIO</a>
                   <a href="" title="">MIXING & MASTERING</a>
-                  <a href="" title="">PHOTOGRAPHY</a>
+                  <a href="" title="">PHOTOGRAPHY</a>                               
                   <a href="" title="">PROMOTION</a>
                   <a href="" title="">AUDIO DISTRIBUTION</a>
                 </div>
@@ -123,7 +123,7 @@
               }
           ?>
         </div>
-        <a class="view-all-button" href="projects">VIEW ALL PROJECTS</a>
+        <a class="view-all-button" href="/projects/">VIEW ALL PROJECTS</a>
       </section>
       <section class="filler" id="services">
         <div class="titlecontainer">
@@ -141,7 +141,7 @@
               <div class='left-container'>
                 <p class="title">MUSIC PRODUCTION</p>
               </div>
-			  		<a class='button' id='latest-button-play' href='music'>
+			  		<a class='button' id='latest-button-play' href='/music/'>
 							<i class="material-icons">chevron_right</i><p>More</p>
 			  		</a>
             </div>
@@ -154,7 +154,7 @@
                   <div class='left-container'>
                      <p class="title">VIDEO PRODUCTION</p>
                   </div>
-					<a class='button' id='latest-button-play' href="videoprod">
+					<a class='button' id='latest-button-play' href="/videoprod/">
 						<i class="material-icons">chevron_right</i><p>More</p>
 					</a>
               </div>
@@ -167,7 +167,7 @@
                  <div class='left-container'>
                     <p class="title">RECORDING STUDIO</p>
                  </div>
-				<a class='button' id='latest-button-play' href="studio">
+				<a class='button' id='latest-button-play' href="/studio/">
 					<i class="material-icons">chevron_right</i><p>More</p>
 				</a>
              </div>
@@ -180,7 +180,7 @@
               <div class='left-container'>
                 <p class="title">MIXING & MASTERING</p>
               </div>
-			  <a class='button' id='latest-button-play' href="mix-master">
+			  <a class='button' id='latest-button-play' href="/mix-master/">
 				<i class="material-icons">chevron_right</i><p>More</p>
 			  </a>
             </div>
@@ -193,7 +193,7 @@
               <div class='left-container'>
                 <p class="title">PHOTOGRAPHY</p>
               </div>
-			  <a class='button' id='latest-button-play' href="photography">
+			  <a class='button' id='latest-button-play' href="/photography/">
 				<i class="material-icons">chevron_right</i><p>More</p>
 			  </a>
             </div>
@@ -219,7 +219,7 @@
               <div class='left-container'>
                 <p class="title">AUDIO DISTRIBUTION</p>
               </div>
-			  <a class='button' id='latest-button-play' href='audiodist'>
+			  <a class='button' id='latest-button-play' href='/audiodist/'>
 				<i class="material-icons">chevron_right</i><p>More</p>
 			  </a>
             </div>
@@ -234,17 +234,17 @@
           <hr>
         </div>
         <div class="container showcase-pg">
-          <?php
+          <?php 
             foreach (new DirectoryIterator($gallery_dir) as $file) {
               if ($file->isDot()) continue;
               if ($file->isDir()) {
-                echo "<a class='item' href='bts_main.php?bts_folder=" . $file->getFilename() . "'> <img src='/img/gallery/" . $file->getFilename() . "/album_art.jpg'/> <div class='detail'> <div class='left-container'><p class='title'>" . $file->getFilename() . "</p></div></div></a>";
+                echo "<a class='item' href='/bts_main.php?bts_folder=" . $file->getFilename() . "'> <img src='/img/gallery/" . $file->getFilename() . "/album_art.jpg'/> <div class='detail'> <div class='left-container'><p class='title'>" . $file->getFilename() . "</p></div></div></a>";
               }
             }
           ?>
 		    </div>
         <br>
-        <a class="view-all-button" href="gallery">VIEW ALL</a>
+        <a class="view-all-button" href="/gallery/">VIEW ALL</a>
       </section>
       <section class="filler" id="about">
         <div class="titlecontainer">
@@ -256,7 +256,7 @@
         <div class="container about">
           <div class="quote">
             <p>"Music is Not what I Do, It's Who I am"</p>
-            <img src="img/logo-about.jpg">
+            <img src="/img/logo-about.jpg">
           </div>
           <div class="main-about">
             <p>
@@ -279,5 +279,5 @@
 				$('header').css('background', 'none');
 			}
 		});
-   </script>
+   </script> 
 </html>

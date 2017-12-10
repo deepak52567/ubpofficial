@@ -41,7 +41,7 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                       </div>
                   </div>
                   <div class="left-container">
-                      <img src="img/We Create Artis 2t.png">
+                      <img src="/img/We Create Artis 2t.png">
                   </div>
               </div>
               <div class='item music common-pg-layout straight'>
@@ -51,9 +51,9 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                           <p>Some of the best music production application available on the market right now is being used at our studio. So that you can get the best quality tracks for your composition.</p>
                       </div>
                       <div class="distributers no-top-margin">
-                          <img src="img/FLStudio_logo.png">
-                          <img src="img/Cubase_logo.png">
-                          <img src="img/ableton_logo.png">
+                          <img src="/img/FLStudio_logo.png">
+                          <img src="/img/Cubase_logo.png">
+                          <img src="/img/ableton_logo.png">
                       </div>
                       <div class="service-provide">
                           <h4>Genres</h4>
@@ -61,7 +61,7 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                       </div>
                   </div>
                   <div class="left-container">
-                      <img src="img/We Work On Beat.png">
+                      <img src="/img/We Work On Beat.png">
                   </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                       </div>
                   </div>
                   <div class="left-container">
-                      <img src="img/Music Production(Corrected).png">
+                      <img src="/img/Music Production(Corrected).png">
                   </div>
               </div>
             </div>
