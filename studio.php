@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="left-container">
-                        <img src="/img/We Create Artis 2t.png">
+                        <img src="img/We Create Artis 2t.png">
                     </div>
                 </div>
             </div>

@@ -22,7 +22,7 @@
         <div class="container about">
           <div class="quote">
             <p>"Music is Not what I Do, It's Who I am"</p>
-            <img src="/img/logo-about.jpg">
+            <img src="img/logo-about.jpg">
           </div>
           <div class="main-about">
             <p>

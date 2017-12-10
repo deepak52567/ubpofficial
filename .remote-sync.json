@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "transport": "ftp",
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ubpofficial.com",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "itadmin@ubpofficial.com",
+  "password": "ram_3721293",
+  "watch": [],
+  "target": "/",
+  "port": "21"
+}

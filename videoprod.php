@@ -40,7 +40,7 @@ $page_title = $tagline = "VIDEO PRODUCTION";
                         </div>
                     </div>
                     <div class="left-container">
-                        <img src="/img/Video Production.png">
+                        <img src="img/Video Production.png">
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ $page_title = $tagline = "VIDEO PRODUCTION";
                     </div>
                 </div>
             </div>
-            <a class="view-all-button" href="/projects.php">Contact Us</a>
+            <a class="view-all-button" href="">Contact Us</a>
         </section>
     </div>
     <?php include('footer.php'); ?>
