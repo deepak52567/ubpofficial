@@ -55,7 +55,7 @@
     .filler .container.audio-sam .item {
         margin: 5% 15%;
     }
-    
+
     .filler .container.gallery-pg {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -281,7 +281,7 @@
 
 @media (max-width: 375px) {
     .sidenavdrawer {
-        min-width: 13em;
+        min-width: 14em;
     }
 
     .filler {

@@ -10,12 +10,8 @@ $(document).ready(function () {
 });
 
 function openCloseMenu() {
-    m = (document.getElementById("sidenavdrawer"));
-    if (m.style.left === "0px") {
-        m.style.left = "-100%";
-    } else if (m.style.left === "-100%") {
-        m.style.left = "0px";
-    }
+    var m = document.getElementById('sidenavdrawer');
+    m.classList.toggle('reveal');
 }
 
 function testfunc(id) {

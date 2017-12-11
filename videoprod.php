@@ -96,7 +96,7 @@ $page_title = $tagline = "VIDEO PRODUCTION";
                     </div>
                 </div>
             </div>
-            <a class="view-all-button" href="/projects.php">Contact Us</a>
+            <a class="view-all-button" href="/projects">Contact Us</a>
         </section>
     </div>
     <?php include('footer.php'); ?>

@@ -1,5 +1,5 @@
-    <nav class="sidenavdrawer" id="sidenavdrawer" style="left: -100%;">
-        <div class="hamburger-menu" onclick="openCloseMenu()">
+    <nav class="sidenavdrawer" id="sidenavdrawer">
+        <div class="hamburger-menu" onclick="openCloseMenu()" style="padding: 1em;">
             <i class="material-icons md-2" id="close-button-ham" style="display: inline-block; color: #545454;">close</i>
         </div>
       <div class="navlinkcontainer">
@@ -7,19 +7,19 @@
           <i class="material-icons">home</i>
           <p>HOME</p>
         </a>
-        <a href="/projects/">
+        <a href="/projects">
           <i class="material-icons">photo</i>
           <p>PROJECTS</p>
         </a>
-        <a href="/services/">
+        <a href="/">
           <i class="material-icons">whatshot</i>
           <p>SERVICES</p>
         </a>
-        <a href="/gallery_cat/">
+        <a href="/gallery">
           <i class="material-icons">whatshot</i>
           <p>GALLERY</p>
         </a>
-        <a href="/about/">
+        <a href="/about">
           <i class="material-icons">info</i>
           <p>ABOUT</p>
         </a>

@@ -196,7 +196,6 @@ header {
 .hamburger-menu {
     display: none;
     padding: 1em 0.8em;
-    transition: all 0.2s ease-out;
     cursor: pointer;
     color: white;
 }
@@ -234,7 +233,7 @@ header nav .nav-link {
     padding: 1.3em 0;
     margin: 0 1em;
     border-top: 2px solid rgba(123, 194, 255, 0);
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 header nav .nav-link:hover {
@@ -246,7 +245,7 @@ header nav .nav-link .dropdown-content {
     flex-direction: column;
     background: #f5f5f5;
     position: absolute;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
     min-width: 15em;
     top: 3.8em;
     left: -4.5em;
@@ -306,19 +305,24 @@ header .top-header-subs .last {
     height: 100%;
     overflow: auto;
     min-width: 14.5em;
-    transition: all 0.2s ease-out;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidenavdrawer.reveal {
+    left: 0;
 }
 
 .navlinkcontainer a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.7em 0;
     text-decoration: none;
     color: #545454;
     text-align: center;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .navlinkcontainer a:hover {
@@ -345,7 +349,7 @@ header .top-header-subs .last {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: calc(100vh - 2vh);
+    min-height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -507,7 +511,7 @@ header .top-header-subs .last {
     background: white;
     border-radius: 3px;
     margin-bottom: 8%;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 1px 20px #BDBDBD;
 }
 
@@ -520,6 +524,7 @@ header .top-header-subs .last {
     align-items: center;
     background: white;
     border-bottom: 1px solid #cccccc;
+    min-height: 100vh;
 }
 
 .filler.top-main {
@@ -565,7 +570,7 @@ header .top-header-subs .last {
     grid-gap: 2%;
     width: 100%;
     margin-top: 1em;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .filler .container .item {
@@ -574,7 +579,7 @@ header .top-header-subs .last {
     background: white;
     border-radius: 3px;
     margin-bottom: 8%;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 1px 20px #BDBDBD;
     overflow: hidden;
     /* border: 1px solid #cccccc; */
@@ -594,7 +599,7 @@ header .top-header-subs .last {
     border-top-left-radius: inherit;
     border-bottom: 2px solid #C62828;
     border-top-right-radius: inherit;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .filler .container .item .detail {
@@ -638,7 +643,7 @@ header .top-header-subs .last {
     font-size: 1rem;
     padding: 0.5em;
     border-radius: 2px;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -661,7 +666,7 @@ header .top-header-subs .last {
     font-size: 1rem;
     padding: 1em;
     border-radius: 2px;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .filler .view-all-button:hover {
@@ -718,7 +723,7 @@ header .top-header-subs .last {
     color: inherit;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
     background: white;
 }
 
@@ -751,7 +756,7 @@ header .top-header-subs .last {
 
 .filler .container.service-pg .item.common-pg-layout.straight {
     flex-direction: row-reverse;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 1px 20px #BDBDBD;
     padding: 2em;
     background: #F5F5F5;
@@ -901,7 +906,7 @@ header .top-header-subs .last {
     border-bottom: 0;
     border-radius: inherit;
     transform: scale(1.5);
-    transition: all 2s ease-out;    
+    transition: all 2s ease-in-out;
 }
 
 .filler .container.showcase-pg .item .detail {
@@ -937,7 +942,7 @@ header .top-header-subs .last {
 }
 
 .nav-modal-content .nav-button {
-    transition: 0.6s ease;
+    transition: 0.3s ease-in-out;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;

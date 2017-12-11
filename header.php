@@ -10,21 +10,21 @@
             </div>
           </a>
           <nav>
-              <a class="nav-link" href="/projects/">PROJECTS</a>
+              <a class="nav-link" href="/projects">PROJECTS</a>
               <div class="nav-link service-hover" href="#services" data-scroll="services">
                 SERVICES
                 <div class="dropdown-content">
-                  <a href="" title="">MUSIC PRODUCTION</a>
-                  <a href="" title="">VIDEO PRODUCTION</a>
-                  <a href="" title="">RECORDING STUDIO</a>
-                  <a href="" title="">MIXING & MASTERING</a>
-                  <a href="" title="">PHOTOGRAPHY</a>                               
-                  <a href="" title="">PROMOTION</a>
-                  <a href="" title="">AUDIO DISTRIBUTION</a>
+                  <a href="/music" title="">MUSIC PRODUCTION</a>
+                  <a href="/videoprod" title="">VIDEO PRODUCTION</a>
+                  <a href="/studio" title="">RECORDING STUDIO</a>
+                  <a href="/mix-master" title="">MIXING & MASTERING</a>
+                  <a href="/photography" title="">PHOTOGRAPHY</a>
+                  <a href="/promotion" title="">PROMOTION</a>
+                  <a href="/audiodist" title="">AUDIO DISTRIBUTION</a>
                 </div>
               </div>
-              <a class="nav-link" href="/gallery/">GALLERY</a>
-              <a class="nav-link" href="/about/">ABOUT US</a>
+              <a class="nav-link" href="/gallery">GALLERY</a>
+              <a class="nav-link" href="/about">ABOUT US</a>
           </nav>
           <a href="#subscribe"  class="top-header-subs">
             <i class="material-icons" style="color: #ffffff; font-size: 2rem;">inbox</i>
