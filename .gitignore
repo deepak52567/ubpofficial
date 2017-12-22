@@ -32,11 +32,11 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+.vscode
 .ftpconfig
 .htaccess
 config.php
 ftpsync.settings
-# End of https://www.gitignore.io/api/linux,sublimetext
 
 
 ### Adobe ###

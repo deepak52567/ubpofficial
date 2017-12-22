@@ -1,36 +1,78 @@
-    <header>
-          <div class="hamburger-menu" onclick="openCloseMenu()">
-            <i class="material-icons md-2" id="open-button-ham" style="display: inline-block; color: #ffffff; font-size: 2rem;">menu</i>
-          </div>
-          <a href="/" class="top-header-logo">
-            <p class="ub">UB</p>
-            <div class="ub-full">
-              <p class="first">URBAN BLUE</p>
-              <p class="last">PRODUCTION</p>
-            </div>
-          </a>
-          <nav>
-              <a class="nav-link" href="/projects">PROJECTS</a>
-              <div class="nav-link service-hover" href="#services" data-scroll="services">
-                SERVICES
-                <div class="dropdown-content">
-                  <a href="/music" title="">MUSIC PRODUCTION</a>
-                  <a href="/videoprod" title="">VIDEO PRODUCTION</a>
-                  <a href="/studio" title="">RECORDING STUDIO</a>
-                  <a href="/mix-master" title="">MIXING & MASTERING</a>
-                  <a href="/photography" title="">PHOTOGRAPHY</a>
-                  <a href="/promotion" title="">PROMOTION</a>
-                  <a href="/audiodist" title="">AUDIO DISTRIBUTION</a>
-                </div>
-              </div>
-              <a class="nav-link" href="/gallery">GALLERY</a>
-              <a class="nav-link" href="/about">ABOUT US</a>
-          </nav>
-          <a href="#subscribe"  class="top-header-subs">
-            <i class="material-icons" style="color: #ffffff; font-size: 2rem;">inbox</i>
-            <div class="subs-full">
-              <p class="first">SUBSCRIBE</p>
-              <p class="last">US</p>
-            </div>
-          </a>
-        </header>
+<header>
+  <div class="hamburger-menu" onclick="openCloseMenu()">
+    <i class="material-icons" id="open-button-ham" style="display: inline-block; font-size: 2rem;">menu</i>
+  </div>
+  <a href="/" class="top-header-logo">
+    <img src="/img/logo_main_white.png"/>
+    <div class="ub-text">
+      <p>URBAN BLUE</p>
+      <p>PRODUCTION</p>
+    </div>
+  </a>
+  <nav>
+    <div class="nav-link">
+      <a href="/projects" data-scroll="projects">PROJECTS</a>
+    </div>
+    <div class="nav-link service-hover">
+      <div>SERVICES</div>
+      <div class="dropdown-content">
+        <a href="/music" title="">
+          <p>
+            <b>MUSIC</b>
+            <br>PRODUCTION</p>
+        </a>
+        <a href="/videoprod" title="">
+          <p>
+            <b>VIDEO</b>
+            <br>PRODUCTION</p>
+        </a>
+        <a href="/studio" title="">
+          <p>
+            <b>RECORDING</b>
+            <br>STUDIO</p>
+        </a>
+        <a href="/mix-master" title="">
+          <p>
+            <b>MIXING</b>
+            <br>MASTERING</p>
+        </a>
+        <a href="/photography" title="">
+          <p>
+            <b>PHOTOGRAPHY</b>
+          </p>
+        </a>
+        <a href="/promotion" title="">
+          <p>
+            <b>PROMOTION</b>
+          </p>
+        </a>
+        <a href="/audiodist" title="">
+          <p>
+            <b>AUDIO</b>
+            <br>DISTRIBUTION</p>
+        </a>
+      </div>
+    </div>
+    <div class="nav-link">
+      <a href="/gallery" data-scroll="gallery">GALLERY</a>
+    </div>
+    <div class="nav-link service-hover">
+      <div>MORE</div>
+      <div class="dropdown-content">
+        <a href="/about" title="">
+          <p>
+            <b>ABOUT US</b>
+          </p>
+        </a>
+        <a href="/contact" title="" style="border-bottom: 1px solid #cccccc;">
+          <p>
+            <b>CONTACT US</b>
+          </p>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="hamburger-menu" onclick="openCloseMenu()">
+    <i class="material-icons" id="open-button-ham" style="display: inline-block; font-size: 2rem;">more_vert</i>
+  </div>
+</header>

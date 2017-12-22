@@ -54,7 +54,7 @@
                 </div>
                 <hr>
             </div>
-            <div class="container projects-pg">
+            <div class="container">
                 <?php
                     $result = mysqli_query($db_con, "SELECT * FROM video_gallery WHERE cat != 'instrument' ORDER BY id DESC");
                     if($result){

@@ -6,6 +6,15 @@ include('config.php');
 ?>
 <html lang="en">
   <?php include('head.php'); ?>
+  <style>
+    .fullscreen-background {
+        /*background: url('/img/cover.jpg') center center / cover no-repeat;*/
+        background: #03a9f4;
+    }
+    .filler .titlecontainer hr{
+		    background: #03a9f4;
+	  }
+  </style>  
   <body>
   <?php
 	include('header.php');
@@ -19,7 +28,7 @@ include('config.php');
         include('backgroundvideooverlay.php');
       ?>
       <section class="filler" id="projects" data-anchor="projects">
-        <div class="container projects-pg">
+        <div class="container">
           <?php
             $result = mysqli_query($db_con, "SELECT * FROM video_gallery ORDER BY id DESC");
               if($result){

@@ -3,10 +3,10 @@
 		<source src="/video/mainintro_2.webm"></source>
 	</video>
   <div class="up-arrow">
-    <i class="material-icons md-5" style="color: #f0f8ff00;">expand_more</i>
+    <i class="material-icons md-5" style="color: transparent;">expand_more</i>
   </div>
   <div class="container">
-    <p class="company-tagline"><?php echo $tagline; ?></p>
+    <div class="company-tagline"><?php echo $tagline; ?></div>
   </div>
   <a class="up-arrow" <?php echo $scrollheader; ?>>
     <i class="material-icons md-5" style="color: white;">expand_less</i>

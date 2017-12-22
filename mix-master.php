@@ -63,12 +63,8 @@
                     </div>
                 </div>
             </div>
-            <div class="titlecontainer" style="margin-top: 5%;">
-                <div class="title" style="font-size: 1.5rem;">
-                    <p>Training</p>
-                </div>
-                <hr>
-            </div>
+        </section>
+        <section class="filler">
             <div class="container service-pg">
               <div class='item mix-master common-pg-layout'>
                   <div class="right-container">

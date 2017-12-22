@@ -65,12 +65,8 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                   </div>
               </div>
             </div>
-            <div class="titlecontainer" style="margin-top: 5%;">
-                <div class="title" style="font-size: 1.5rem;">
-                    <p>Training</p>
-                </div>
-                <hr>
-            </div>
+        </section>
+        <section class="filler">            
             <div class="container service-pg">
               <div class='item music common-pg-layout'>
                   <div class="right-container">
@@ -97,7 +93,7 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                 </div>
                 <hr>
             </div>
-            <div class="container projects-pg">
+            <div class="container">
                 <?php
                     $result = mysqli_query($db_con, "SELECT * FROM video_gallery ORDER BY id DESC");
                     if($result){
@@ -127,30 +123,30 @@ $page_title = $tagline = "MUSIC PRODUCTION";
                 </div>
                 <hr>
             </div>
-            <div class="container projects-pg">
-                <?php
-                    $result = mysqli_query($db_con, "SELECT * FROM video_gallery ORDER BY id DESC");
-                    if($result){
-                        while($rowval = mysqli_fetch_assoc($result)){
-                            $title = $rowval['title'];
-                            $artist = $rowval['artist'];
-                            $ytID = $rowval['ytID'];
-                            echo "<div class='item'>
-                                    <img src='//i1.ytimg.com/vi/" . $ytID . "/mqdefault.jpg'/>
-                                    <div class='detail'>
-                                        <div class='left-container'>
-                                            <p class='title'>" . $title . "</p>
-                                            <p class='sub-title'>" . $artist . "</p>
-                                        </div>
-                                        <a class='button' id='latest-button-play' onclick=testfunc('" . $ytID . "')>
-                                        <i class='material-icons'>play_circle_filled</i><p>PLAY</p>
-                                        </a>
-                                    </div>
-                                </div>";
-                        }
-                    }
-                ?>
-            </div>
+            <div class="container">
+            <?php $result=mysqli_query($db_con, "SELECT * FROM video_gallery WHERE cat = 'movie' ORDER BY id DESC");
+              if($result) {
+                while($rowval=mysqli_fetch_assoc($result)) {
+                  $title=$rowval['title'];
+                  $artist=$rowval['artist'];
+                  $ytID=$rowval['ytID'];
+                  echo "<div class='item'>
+                            <img alt=$title src='//i1.ytimg.com/vi/$ytID/mqdefault.jpg'/>
+                            <div class='detail'>
+                                <div class='left-container'>
+                                    <p class='title'>$title</p>
+                                    <p class='sub-title'>$artist</p>
+                                </div>
+                                <a class='button' id='latest-button-play' onclick=testfunc('$ytID')>
+                                    <i class='material-icons'>play_circle_filled</i>
+                                    <p>PLAY</p>
+                                </a>
+                            </div>
+                        </div>";
+    
+                }
+              }
+            ?></div>
         </section>
     </div>
     <?php include('footer.php'); ?>

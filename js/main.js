@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $("a[href^='#']").on("click", function (e) {
         e.preventDefault();
+        var dispvalue = ($(window).height()) - 70;
         var target = this.hash;
         var $target = $(target);
         $("html, body").animate({

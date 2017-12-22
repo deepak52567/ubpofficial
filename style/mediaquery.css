@@ -23,21 +23,8 @@
     .fullscreen-player .modal-content {
         width: 70%;
     }
-
-    .filler .container.projects-pg {
-        grid-template-columns: 32% 32% 32%;
-    }
-
-    .filler .container.showcase-pg {
-        grid-template-columns: 32% 32% 32%;
-    }
-
     .filler .container {
-        grid-template-columns: 49% 49%;
-    }
-
-    .filler .container.gallery-con {
-        grid-template-columns: 32% 32% 32%;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .filler .container .item {
@@ -55,11 +42,6 @@
     .filler .container.audio-sam .item {
         margin: 5% 15%;
     }
-
-    .filler .container.gallery-pg {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    }
 }
 
 @media (max-width: 875px) {
@@ -73,6 +55,10 @@
         padding: 0;
     }
 
+    header .top-header-logo {
+        padding: 1em 0.7em;
+    }
+
     header nav {
         display: none;
     }
@@ -82,8 +68,8 @@
         padding: 1em 0.7em;
     }
 
-    header .top-header-subs .subs-full {
-        display: none;
+    .sidenavdrawer .hamburger-menu {
+        padding: 1em 0.7em;
     }
 
     .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
@@ -110,10 +96,6 @@
 
     .filler .container.about .quote p {
         margin-top: 1em;
-    }
-
-    .filler .container.projects-pg .item .detail .button > p {
-        display: none;
     }
 
     .filler .container.service-pg .item.common-pg-layout {
@@ -185,20 +167,8 @@
         font-size: 1.4rem;
     }
 
-    .filler .container.projects-pg {
-        grid-template-columns: 49% 49%;
-    }
-
-    .filler .container.showcase-pg {
-        grid-template-columns: 48% 48%;
-    }
-
-    .filler .container.gallery-con {
-        grid-template-columns: 48% 48%;
-    }
-
-    .filler .container.service {
-        grid-template-columns: 49% 49%;
+    .filler .container {
+        grid-template-columns: 1fr 1fr;
     }
 
     .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
@@ -212,10 +182,6 @@
 
 @media (max-width: 425px) {
     header .hamburger-menu>i {
-        font-size: 1.7rem !important;
-    }
-
-    header .top-header-subs>i {
         font-size: 1.7rem !important;
     }
 
@@ -233,22 +199,6 @@
 
     .filler.gallery-con {
         padding: 9%;
-    }
-
-    .filler .container.projects-pg {
-        grid-template-columns: 100%;
-    }
-
-    .filler .container.projects-pg .item .detail .button > p {
-        display: inline-block;
-    }
-
-    .filler .container.showcase-pg {
-        grid-template-columns: 100%;
-    }
-
-    .filler .container.service {
-        grid-template-columns: 100%;
     }
 
     .filler .container.about .quote {

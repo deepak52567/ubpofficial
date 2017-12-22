@@ -50,7 +50,7 @@ $page_title = $tagline = "VIDEO PRODUCTION";
                 </div>
                 <hr>
             </div>
-            <div class="container projects-pg">
+            <div class="container">
                 <?php
                     $result = mysqli_query($db_con, "SELECT * FROM video_gallery ORDER BY id DESC");
                     if($result){
@@ -74,6 +74,8 @@ $page_title = $tagline = "VIDEO PRODUCTION";
                     }
                 ?>
             </div>
+        </section>
+        <section class="filler">
             <div class="titlecontainer" style="margin-top: 5%;">
                 <div class="title">
                     <p>CONTACT US</p>
