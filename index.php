@@ -1,51 +1,137 @@
 <!DOCTYPE html>
 <?php require_once 'config.php';
-$tagline='MAKE YOUR RELEASE <br>MORE VISIBLE';
-$scrollheader='href="#about" data-scroll="projects"';
-$gallery_dir='img/gallery/';
+$tagline = 'MAKE YOUR RELEASE <br>MORE VISIBLE';
+$page_title = 'HOME';
+$scrollheader='href="#projects" data-scroll="projects"';
+$dir='bts_gallery/';
 ?>
+<script> var headerColor = '#03a9f4'; </script>
 <html lang="en">
-  <?php 
+  <?php
     include 'head.php';
   ?>
 <body>
-  <?php
-    include 'header.php';
-    include 'sidenav.php';
-  ?>
+  <header>
+    <a href="/" class="top-header-logo">
+      <img src="/img/logo_main_white.png" />
+      <div class="ub-text">
+        <p>URBAN BLUE</p>
+        <p>PRODUCTION</p>
+      </div>
+    </a>
+    <nav>
+      <div class="nav-link">
+        <a href="#projects" data-scroll="projects">PROJECTS</a>
+      </div>
+      <div class="nav-link service-hover" href="#services" onclick="">
+        <div>SERVICES</div>
+        <div class="dropdown-content">
+          <a href="/music" title="">
+            <p>
+              <b>MUSIC</b>
+              <br>PRODUCTION</p>
+          </a>
+          <a href="/videoprod" title="">
+            <p>
+              <b>VIDEO</b>
+              <br>PRODUCTION</p>
+          </a>
+          <a href="/studio" title="">
+            <p>
+              <b>RECORDING</b>
+              <br>STUDIO</p>
+          </a>
+          <a href="/mix-master" title="">
+            <p>
+              <b>MIXING</b>
+              <br>MASTERING</p>
+          </a>
+          <a href="/photography" title="">
+            <p>
+              <b>PHOTOGRAPHY</b>
+            </p>
+          </a>
+          <a href="/promotion" title="">
+            <p>
+              <b>PROMOTION</b>
+            </p>
+          </a>
+          <a href="/audiodist" title="">
+            <p>
+              <b>AUDIO</b>
+              <br>DISTRIBUTION</p>
+          </a>
+        </div>
+      </div>
+      <div class="nav-link">
+        <a href="#gallery" data-scroll="gallery">GALLERY</a>
+      </div>
+      <div class="nav-link service-hover">
+        <div>MORE</div>
+        <div class="dropdown-content">
+          <a href="/about" title="">
+            <p>
+              <b>ABOUT US</b>
+            </p>
+          </a>
+          <a href="/contact" title="" style="border-bottom: 1px solid #cccccc;">
+            <p>
+              <b>CONTACT US</b>
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="nav-link">
+        <script>
+          (function() {
+            var cx = '007402177613045494252:vbo9ujpkysg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </div> -->
+    </nav>
+    <div class="hamburger-menu" onclick="openCloseMenu()">
+      <i class="material-icons" id="open-button-ham" style="display: inline-block; font-size: 2rem;">menu</i>
+    </div>
+  </header>
+  <nav class="sidenavdrawer" id="sidenavdrawer">
+    <div class="hamburger-menu" onclick="openCloseMenu()">
+      <i class="material-icons md-2" id="close-button-ham" style="display: inline-block; font-size: 2rem; color: #545454;">close</i>
+    </div>
+    <div class="navlinkcontainer">
+      <a href="/">
+        <i class="material-icons">home</i>
+        <p>HOME</p>
+      </a>
+      <a href="/projects">
+        <i class="material-icons">view_carousel</i>
+        <p>PROJECTS</p>
+      </a>
+      <a href="/">
+        <i class="material-icons">work</i>
+        <p>SERVICES</p>
+      </a>
+      <a href="/gallery">
+        <i class="material-icons">photo</i>
+        <p>GALLERY</p>
+      </a>
+      <a href="/about">
+        <i class="material-icons">info</i>
+        <p>ABOUT</p>
+      </a>
+    </div>
+  </nav>
   <div class="main">
     <?php
       include 'backgroundvideooverlay.php';
       include 'fullscreen-player.php';
     ?>
-    <section class="filler" id="about">
-      <div class="titlecontainer">
-        <div class="title">
-          <p>ABOUT</p>
-        </div>
-        <hr>
-      </div>
-      <div class="container about">
-        <div class="quote">
-          <p>"Music is Not what I Do, It's Who I am"</p>
-          <img src="/img/logo-about.jpg">
-        </div>
-        <div class="main-about">
-          <p>Urban Blue is a production house best known for its Music and video production.
-            <br>
-            <br>It was founded by Mr. Vishal Kumar(LATx) in July 2014 and since then we have produced more than 100 hit music
-            tracks and videos one after another. We believe in supporting great talents with our outstanding quality of work
-            to make their talent more effective and more visible to the audience. Our only aim is to take the quality of
-            music and video production to the next level in affordable price! Apart from producing complete music tracks
-            and video projects we also provide different services like mixing-mastering, photo/video editing, recording studio,
-            Online promotion, Audio distribution, training in music production and sound engineering.
-            <br>
-            <br>We have a hardworking and talented team of writers, music composers, editors, cameramen and recordists who work
-            to provide our clients the best quality work under the direction of the founder of Urban Blue production, Mr.
-            Vishal Kumar(LATx) who himself is a master in the field of music and video production! </p>
-        </div>
-      </div>
-    </section>    
     <section class="filler" id="projects">
       <div class="titlecontainer">
         <div class="title">
@@ -54,31 +140,13 @@ $gallery_dir='img/gallery/';
         <hr>
       </div>
       <div class="container">
-        <?php $result=mysqli_query($db_con, "SELECT * FROM video_gallery WHERE cat != 'instrument' ORDER BY id DESC");
-          if($result) {
-            while($rowval=mysqli_fetch_assoc($result)) {
-              $title=$rowval['title'];
-              $artist=$rowval['artist'];
-              $ytID=$rowval['ytID'];
-              echo "<div class='item' onclick=testfunc('$ytID')>
-                      <img alt=$title src='//i1.ytimg.com/vi/$ytID/mqdefault.jpg'/>
-                      <div class='detail'>
-                        <div class='left-container'>
-                          <p class='title'>$title</p>
-                          <p class='sub-title'>$artist</p>
-                        </div>
-                        <a class='button' id='latest-button-play'>
-                          <i class='material-icons'>play_circle_filled</i>
-                        </a>
-                      </div>
-                    </div>";
-
-            }
-          }
-        ?></div>
+        <?php
+          $result=mysqli_query($db_con, "SELECT * FROM video_gallery WHERE cat != 'instrument' ORDER BY id DESC");
+          include 'projects_item.php';
+        ?>
+      </div>
       <a class="view-all-button" href="/projects">
         <p>VIEW ALL PROJECTS</p>
-        <i class="material-icons" style="font-size: 16px;">chevron_right</i>
       </a>
     </section>
     <section class="filler" id="services">
@@ -190,33 +258,12 @@ $gallery_dir='img/gallery/';
         <hr>
       </div>
       <div class="container showcase-pg">
-        <?php foreach (new DirectoryIterator($gallery_dir) as $file) {
-          if ($file->isDot()) continue;
-          if ($file->isDir()) {
-            echo "<a class='item' href='/bts_main.php?bts_folder=" . $file->getFilename() . "'>
-                  <img src='/img/gallery/" . $file->getFilename() . "/album_art.jpg'/><div class='detail'><div class='left-container'><p class='title'>" . $file->getFilename() . "</p></div></div></a>";
-          }
-        }
-      ?>
+        <?php include 'gallery_item.php'; ?>
       </div>
       <br>
       <a class="view-all-button" href="/gallery">VIEW ALL</a>
     </section>
   </div>
-  <?php include('footer.php');
-?>
+  <?php include('footer.php'); ?>
 </body>
-<script>
-  $(window).scroll(function () {
-      var windscroll = $(window).scrollTop();
-      var dispvalue = ($(window).height()) - 70;
-      if (windscroll >= dispvalue) {
-        $('header').css('background', '#03a9f4');
-      } else {
-        $('header').css('background', 'transparent');
-      }
-    }
-  );
-</script>
-
 </html>

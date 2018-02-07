@@ -1,265 +1,190 @@
 @media (max-width: 1024px) {
-    header nav a {
-        font-size: 0.95rem;
-    }
+  header nav .nav-link {
+      min-width: 8em;
+  }
 
-    .fullscreen-background .container .company-name {
-        font-size: 1.5rem;
-    }
+  .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
+      width: 80%;
+      height: 70%;
+  }
 
-    .fullscreen-background .container .company-tagline {
-        font-size: 3rem;
-    }
+  .fullscreen-player .close-button {
+      width: 80%;
+  }
 
-    .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
-        width: 80%;
-        height: 70%;
-    }
+  .fullscreen-player .modal-content {
+      width: 70%;
+  }
+  .fullscreen-background .container .company-tagline {
+    font-size: 4rem;
+  }
+  .filler .container {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .fullscreen-player .close-button {
-        width: 80%;
-    }
+  .filler .container .item {
+      margin-bottom: 6%;
+  }
 
-    .fullscreen-player .modal-content {
-        width: 70%;
-    }
-    .filler .container {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .filler .tagline {
+    font-size: 2.3rem;
+  }
 
-    .filler .container .item {
-        margin-bottom: 4%;
-    }
+  .filler .hero-detail {
+    font-size: 1.2rem;
+  }
 
-    .filler .container.about .quote {
-        margin-bottom: 1em;
-    }
+  .filler .container.about .quote {
+      margin-bottom: 1em;
+  }
 
-    .filler .container.service-pg .item.common-pg-layout .right-container .distributers {
-        margin-top: 1em;
-    }
-
-    .filler .container.audio-sam .item {
-        margin: 5% 15%;
-    }
+  .filler .container.audio-sam .item {
+      margin: 5% 15%;
+  }
 }
 
 @media (max-width: 875px) {
-    .filler .container.audio-sam .item {
-        margin: 5% 10%;
-    }
+  header nav .nav-link {
+      min-width: 7em;
+  }
+  .filler .container.audio-sam .item {
+      margin: 5% 10%;
+  }
 }
 
-@media (max-width: 760px) {
-    header {
-        padding: 0;
-    }
+@media (max-width: 768px) {
+  header {
+      padding: 0 1.2em;
+  }
 
-    header .top-header-logo {
-        padding: 1em 0.7em;
-    }
+  header nav {
+      display: none;
+  }
 
-    header nav {
-        display: none;
-    }
+  .hamburger-menu {
+      display: flex;
+  }
 
-    .hamburger-menu {
-        display: flex;
-        padding: 1em 0.7em;
-    }
+  .sidenavdrawer .hamburger-menu {
+      padding: 1em;
+  }
 
-    .sidenavdrawer .hamburger-menu {
-        padding: 1em 0.7em;
-    }
+  .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
+      width: 95%;
+      height: 65%;
+  }
 
-    .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
-        width: 95%;
-        height: 65%;
-    }
+  .fullscreen-player .modal-content {
+      width: 95%;
+  }
 
-    .fullscreen-player .modal-content {
-        width: 95%;
-    }
+  .fullscreen-player .close-button {
+      width: 95%;
+  }
 
-    .fullscreen-player .close-button {
-        width: 95%;
-    }
+  .filler {
+      padding: 4em 1.2em;
+  }
 
-    .filler {
-        padding: 2em 0.9em;
-    }
+  .filler.service-pg .tagline {
+    width: 100%;
+    text-align: center;
+  }
 
-    .filler .container.about .quote {
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
+  .filler.service-pg .hero-detail {
+    width: 100%;
+    text-align: center;
+  }
 
-    .filler .container.about .quote p {
-        margin-top: 1em;
-    }
+  .filler .container.about .quote {
+      flex-direction: column-reverse;
+  }
 
-    .filler .container.service-pg .item.common-pg-layout {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+  .filler .view-all-button {
+      align-self: center;
+  }
 
-    .filler .container.service-pg .item.common-pg-layout .right-container {
-        width: 100%;
-        text-align: inherit;
-    }
+  .filler .container.about .quote p {
+      margin-top: 1em;
+  }
 
-    .filler .container.service-pg .item.common-pg-layout .left-container {
-        width: 100%;
-    }
+  .filler .container.audio-sam .item {
+      margin: 5%;
+  }
 
-    .filler .container.service-pg .item.common-pg-layout.straight {
-        flex-direction: column-reverse;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout .left-container img {
-        margin-top: 1em;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout.straight .left-container img {
-        margin-top: 1em;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout .right-container>h2 {
-        margin-top: 1em;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout.straight .right-container {
-        text-align: center;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout.straight .right-container>h2 {
-        margin-top: 1em;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout .right-container .distributers {
-        justify-content: space-around;
-    }
-
-    .filler .container.audio-sam {
-        grid-template-columns: 100%;
-        grid-gap: 0;
-    }
-
-    .filler .container.audio-sam .item {
-        margin: 5% 20%;
-    }
-
-    .fullscreen-background .video_overlay {
-        display: none;
-    }
-
-    .filler .container.gallery-pg .item {
-        width: 46.8%;
-    }
+  .fullscreen-background .video_overlay {
+      display: none;
+  }
 }
 
 @media (max-width: 600px) {
-    .fullscreen-background .container .company-tagline {
-        font-size: 2.5rem;
-    }
+  .fullscreen-background .container .company-tagline {
+      font-size: 4rem;
+  }
 
-    .filler .container .item .detail .button .material-icons {
-        font-size: 1.4rem;
-    }
+  .filler .container .item .detail .button .material-icons {
+      font-size: 1.7rem;
+  }
 
-    .filler .container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
-        font-size: 4.5rem;
-    }
-
-    .filler .container.audio-sam .item {
-        margin: 5% 15%;
-    }
+  .filler .container {
+      grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 425px) {
-    header .hamburger-menu>i {
-        font-size: 1.7rem !important;
-    }
+  header .hamburger-menu>i {
+      font-size: 1.7rem !important;
+  }
 
-    .fullscreen-background .container .company-name {
-        font-size: 1.3rem;
-    }
+  .fullscreen-background .container .company-tagline {
+      font-size: 3rem;
+  }
 
-    .fullscreen-background .container .company-tagline {
-        font-size: 2rem;
-    }
+  .filler {
+      padding: 4em 1em;
+  }
 
-    .filler .container {
-        grid-template-columns: 100%;
-    }
+  .filler .tagline {
+    font-size: 2rem;
+  }
 
-    .filler.gallery-con {
-        padding: 9%;
-    }
+  .filler .titlecontainer .title {
+      font-size: 2rem;
+  }
 
-    .filler .container.about .quote {
-        font-size: 1.5rem;
-    }
+  .filler .container {
+      grid-template-columns: 100%;
+  }
 
-    .filler .view-all-button {
-        padding: 0.7em;
-    }
+  .filler .container.about .quote {
+      font-size: 1.5rem;
+  }
 
-    .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
-        font-size: 4rem;
-    }
+  .filler .view-all-button {
+      margin: 1em 0;
+  }
 
-    .filler .container.audio-sam .item {
-        margin: 5% 10%;
-    }
+  .filler .container.audio-sam .item {
+      margin: 5% 10%;
+  }
 
-    .filler .container.gallery-pg {
-        flex-direction: column;
-        max-height: 100%;
-    }
-
-    .filler .container.gallery-pg .item {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 4%;
-    }
 }
 
 @media (max-width: 375px) {
-    .sidenavdrawer {
-        min-width: 14em;
-    }
+  .sidenavdrawer {
+      min-width: 14em;
+  }
 
-    .filler {
-        padding: 2em 0.9em;
-    }
+  .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
+      width: 95%;
+      height: 55%;
+  }
 
-    .filler .titlecontainer.service-pg .title {
-        font-size: 2rem;
-    }
+  .fullscreen-player .modal-content {
+      width: 95%;
+  }
 
-    .filler .container.gallery-con {
-        grid-template-columns: 100%;
-    }
-
-    .fullscreen-player iframe, .fullscreen-player object, .fullscreen-player embed {
-        width: 95%;
-        height: 55%;
-    }
-
-    .fullscreen-player .modal-content {
-        width: 95%;
-    }
-
-    .fullscreen-player .close-button {
-        width: 95%;
-    }
-
-    .filler .container.service-pg .item.common-pg-layout .right-container .service-provide>h2 {
-        font-size: 3rem;
-    }
+  .fullscreen-player .close-button {
+      width: 95%;
+  }
 }

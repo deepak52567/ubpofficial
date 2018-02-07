@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 include('config.php');
-$page_title = $_GET['bts_folder'];
-$bts_folder = 'img/gallery/' . $_GET['bts_folder'] . '/';
+$page_title = $_GET['folder'];
+$folder = 'bts_gallery/' . $_GET['folder'] . '/';
 ?>
 <html lang="en">
   <?php include('head.php'); ?>
@@ -14,23 +14,22 @@ $bts_folder = 'img/gallery/' . $_GET['bts_folder'] . '/';
   <body>
   <?php
 	include('header.php');
-	include('sidenav.php');
   ?>
     <div class="main">
       <section class="filler top-fix" id="gallery">
         <div class="titlecontainer">
           <div class="title">
-            <p><?php echo $_GET['bts_folder']; ?></p>
+            <p><?php echo $page_title; ?></p>
           </div>
           <hr>
         </div>
         <div class="container showcase-pg">
           <?php 
-            foreach (new DirectoryIterator($bts_folder) as $file) {
+            foreach (new DirectoryIterator($folder) as $file) {
               if ($file->isDot()) continue;
               echo 
                 "<a class='item' onclick='openModal();currentSlide(1)'>
-                  <img src='" . $bts_folder . $file->getFilename() . "'/>
+                  <img src='" . $folder . $file->getFilename() . "'/>
                 </a>";
             }
           ?>
@@ -39,11 +38,11 @@ $bts_folder = 'img/gallery/' . $_GET['bts_folder'] . '/';
    	  <section id="myModal" class="fullscreen-player">
     		<div class="modal-content">    		
           <?php 
-            foreach (new DirectoryIterator($bts_folder) as $file) {
+            foreach (new DirectoryIterator($folder) as $file) {
               if ($file->isDot()) continue;
               echo 
                 "<div class='mySlides'>
-                  <img src='" . $bts_folder . $file->getFilename() . "'/>
+                  <img src='" . $folder . $file->getFilename() . "'/>
                 </div>";
             }
           ?>          

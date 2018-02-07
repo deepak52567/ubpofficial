@@ -2,7 +2,7 @@
   <?php
   include('config.php');
   $page_title = $tagline = "GALLERY";
-  $gallery_dir = 'img/gallery/';
+  $dir = "bts_gallery/";
 ?>
 <html lang="en">
   <?php include('head.php'); ?>
@@ -14,7 +14,6 @@
   <body>
   <?php
 	include('header.php');
-	include('sidenav.php');
   ?>
     <div class="main">
       <section class="filler top-fix" id="gallery">
@@ -25,14 +24,7 @@
           <hr>
         </div>
         <div class="container showcase-pg">
-          <?php 
-            foreach (new DirectoryIterator($gallery_dir) as $file) {
-              if ($file->isDot()) continue;
-              if ($file->isDir()) {
-                echo "<a class='item' href='/bts_main.php?bts_folder=" . $file->getFilename() . "'> <img src='/img/gallery/" . $file->getFilename() . "/album_art.jpg'/> <div class='detail'> <div class='left-container'><p class='title'>" . $file->getFilename() . "</p></div></div></a>";
-              }
-            }
-          ?>
+        <?php include 'gallery_item.php'; ?>
   		  </div>
       </section>    
     </div>

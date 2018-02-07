@@ -5,12 +5,12 @@
   $tagline = 'REMEMBER<br>WE ARE MAKING IT BIG.';
   $scrollheader = 'href="#projects" data-scroll="projects"';
 ?>
+<script> var headerColor = '#03a9f4'; </script>
 <html lang="en">
   <?php include('head.php'); ?>
   <body>
     <?php
         include('header.php');
-        include('sidenav.php');
     ?>
     <div class="main">
       <?php
@@ -58,15 +58,5 @@
     </div>
     <?php include('footer.php'); ?>    
   </body>
-  <script>
-    $(window).scroll(function() {
-      var windscroll = $(window).scrollTop();
-      if(windscroll >= 400){
-        $('header').css('background', '#03a9f4');
-      }
-      else{
-        $('header').css('background', 'none');
-      }
-    });
-   </script> 
+  
 </html>
