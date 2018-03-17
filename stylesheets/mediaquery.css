@@ -1,0 +1,237 @@
+@media (max-width: 1024px) {
+  /* line 4, ../sass/mediaquery.scss */
+  header nav .nav-link {
+    min-width: 8em;
+  }
+
+  /* line 10, ../sass/mediaquery.scss */
+  .fullscreen-player iframe {
+    width: 80%;
+    height: 70%;
+  }
+  /* line 14, ../sass/mediaquery.scss */
+  .fullscreen-player object {
+    width: 80%;
+    height: 70%;
+  }
+  /* line 18, ../sass/mediaquery.scss */
+  .fullscreen-player embed {
+    width: 80%;
+    height: 70%;
+  }
+  /* line 22, ../sass/mediaquery.scss */
+  .fullscreen-player .close-button {
+    width: 80%;
+  }
+  /* line 25, ../sass/mediaquery.scss */
+  .fullscreen-player .modal-content {
+    width: 70%;
+  }
+
+  /* line 31, ../sass/mediaquery.scss */
+  .fullscreen-background .container .company-tagline {
+    font-size: 4rem;
+  }
+
+  /* line 37, ../sass/mediaquery.scss */
+  .filler .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* line 39, ../sass/mediaquery.scss */
+  .filler .container .item {
+    margin-bottom: 6%;
+  }
+  /* line 43, ../sass/mediaquery.scss */
+  .filler .tagline {
+    font-size: 2.3rem;
+  }
+  /* line 46, ../sass/mediaquery.scss */
+  .filler .hero-detail {
+    font-size: 1.2rem;
+  }
+  /* line 50, ../sass/mediaquery.scss */
+  .filler .container.about .quote {
+    margin-bottom: 1em;
+  }
+  /* line 55, ../sass/mediaquery.scss */
+  .filler .container.audio-sam .item {
+    margin: 5% 15%;
+  }
+}
+@media (max-width: 875px) {
+  /* line 64, ../sass/mediaquery.scss */
+  header nav .nav-link {
+    min-width: 7em;
+  }
+
+  /* line 71, ../sass/mediaquery.scss */
+  .filler .container.audio-sam .item {
+    margin: 5% 10%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 78, ../sass/mediaquery.scss */
+  header {
+    padding: 0 1.2em;
+  }
+  /* line 80, ../sass/mediaquery.scss */
+  header nav {
+    display: none;
+  }
+
+  /* line 84, ../sass/mediaquery.scss */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* line 88, ../sass/mediaquery.scss */
+  .sidenavdrawer .hamburger-menu {
+    padding: 1em;
+  }
+
+  /* line 93, ../sass/mediaquery.scss */
+  .fullscreen-player iframe {
+    width: 95%;
+    height: 65%;
+  }
+  /* line 97, ../sass/mediaquery.scss */
+  .fullscreen-player object {
+    width: 95%;
+    height: 65%;
+  }
+  /* line 101, ../sass/mediaquery.scss */
+  .fullscreen-player embed {
+    width: 95%;
+    height: 65%;
+  }
+  /* line 105, ../sass/mediaquery.scss */
+  .fullscreen-player .modal-content {
+    width: 95%;
+  }
+  /* line 108, ../sass/mediaquery.scss */
+  .fullscreen-player .close-button {
+    width: 95%;
+  }
+
+  /* line 112, ../sass/mediaquery.scss */
+  .filler {
+    padding: 4em 1.2em;
+  }
+  /* line 115, ../sass/mediaquery.scss */
+  .filler .container.about .quote {
+    flex-direction: column-reverse;
+  }
+  /* line 117, ../sass/mediaquery.scss */
+  .filler .container.about .quote p {
+    margin-top: 1em;
+  }
+  /* line 122, ../sass/mediaquery.scss */
+  .filler .view-all-button {
+    align-self: center;
+  }
+  /* line 126, ../sass/mediaquery.scss */
+  .filler .container.audio-sam .item {
+    margin: 5%;
+  }
+
+  /* line 132, ../sass/mediaquery.scss */
+  .filler.service-pg .tagline {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 136, ../sass/mediaquery.scss */
+  .filler.service-pg .hero-detail {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 142, ../sass/mediaquery.scss */
+  .fullscreen-background .video_overlay {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  /* line 150, ../sass/mediaquery.scss */
+  .fullscreen-background .container .company-tagline {
+    font-size: 4rem;
+  }
+
+  /* line 156, ../sass/mediaquery.scss */
+  .filler .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* line 160, ../sass/mediaquery.scss */
+  .filler .container .item .detail .button .material-icons {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 425px) {
+  /* line 173, ../sass/mediaquery.scss */
+  header .hamburger-menu > i {
+    font-size: 1.7rem !important;
+  }
+
+  /* line 180, ../sass/mediaquery.scss */
+  .fullscreen-background .container .company-tagline {
+    font-size: 3rem;
+  }
+
+  /* line 185, ../sass/mediaquery.scss */
+  .filler {
+    padding: 4em 1em;
+  }
+  /* line 187, ../sass/mediaquery.scss */
+  .filler .tagline {
+    font-size: 2rem;
+  }
+  /* line 191, ../sass/mediaquery.scss */
+  .filler .titlecontainer .title {
+    font-size: 2rem;
+  }
+  /* line 195, ../sass/mediaquery.scss */
+  .filler .container {
+    grid-template-columns: 100%;
+  }
+  /* line 199, ../sass/mediaquery.scss */
+  .filler .container.about .quote {
+    font-size: 1.5rem;
+  }
+  /* line 203, ../sass/mediaquery.scss */
+  .filler .view-all-button {
+    margin: 1em 0;
+  }
+  /* line 207, ../sass/mediaquery.scss */
+  .filler .container.audio-sam .item {
+    margin: 5% 10%;
+  }
+}
+@media (max-width: 375px) {
+  /* line 214, ../sass/mediaquery.scss */
+  .sidenavdrawer {
+    min-width: 14em;
+  }
+
+  /* line 218, ../sass/mediaquery.scss */
+  .fullscreen-player iframe {
+    width: 95%;
+    height: 55%;
+  }
+  /* line 222, ../sass/mediaquery.scss */
+  .fullscreen-player object {
+    width: 95%;
+    height: 55%;
+  }
+  /* line 226, ../sass/mediaquery.scss */
+  .fullscreen-player embed {
+    width: 95%;
+    height: 55%;
+  }
+  /* line 230, ../sass/mediaquery.scss */
+  .fullscreen-player .modal-content {
+    width: 95%;
+  }
+  /* line 233, ../sass/mediaquery.scss */
+  .fullscreen-player .close-button {
+    width: 95%;
+  }
+}

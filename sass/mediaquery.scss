@@ -1,0 +1,237 @@
+@media (max-width: 1024px) {
+	header {
+		nav {
+			.nav-link {
+				min-width: 8em;
+			}
+		}
+	}
+	.fullscreen-player {
+		iframe {
+			width: 80%;
+			height: 70%;
+		}
+		object {
+			width: 80%;
+			height: 70%;
+		}
+		embed {
+			width: 80%;
+			height: 70%;
+		}
+		.close-button {
+			width: 80%;
+		}
+		.modal-content {
+			width: 70%;
+		}
+	}
+	.fullscreen-background {
+		.container {
+			.company-tagline {
+				font-size: 4rem;
+			}
+		}
+	}
+	.filler {
+		.container {
+			grid-template-columns: 1fr 1fr 1fr;
+			.item {
+				margin-bottom: 6%;
+			}
+		}
+		.tagline {
+			font-size: 2.3rem;
+		}
+		.hero-detail {
+			font-size: 1.2rem;
+		}
+		.container.about {
+			.quote {
+				margin-bottom: 1em;
+			}
+		}
+		.container.audio-sam {
+			.item {
+				margin: 5% 15%;
+			}
+		}
+	}
+}
+@media (max-width: 875px) {
+	header {
+		nav {
+			.nav-link {
+				min-width: 7em;
+			}
+		}
+	}
+	.filler {
+		.container.audio-sam {
+			.item {
+				margin: 5% 10%;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	header {
+		padding: 0 1.2em;
+		nav {
+			display: none;
+		}
+	}
+	.hamburger-menu {
+		display: flex;
+	}
+	.sidenavdrawer {
+		.hamburger-menu {
+			padding: 1em;
+		}
+	}
+	.fullscreen-player {
+		iframe {
+			width: 95%;
+			height: 65%;
+		}
+		object {
+			width: 95%;
+			height: 65%;
+		}
+		embed {
+			width: 95%;
+			height: 65%;
+		}
+		.modal-content {
+			width: 95%;
+		}
+		.close-button {
+			width: 95%;
+		}
+	}
+	.filler {
+		padding: 4em 1.2em;
+		.container.about {
+			.quote {
+				flex-direction: column-reverse;
+				p {
+					margin-top: 1em;
+				}
+			}
+		}
+		.view-all-button {
+			align-self: center;
+		}
+		.container.audio-sam {
+			.item {
+				margin: 5%;
+			}
+		}
+	}
+	.filler.service-pg {
+		.tagline {
+			width: 100%;
+			text-align: center;
+		}
+		.hero-detail {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.fullscreen-background {
+		.video_overlay {
+			display: none;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.fullscreen-background {
+		.container {
+			.company-tagline {
+				font-size: 4rem;
+			}
+		}
+	}
+	.filler {
+		.container {
+			.item {
+				.detail {
+					.button {
+						.material-icons {
+							font-size: 1.7rem;
+						}
+					}
+				}
+			}
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+@media (max-width: 425px) {
+	header {
+		.hamburger-menu {
+			>i {
+				font-size: 1.7rem !important;
+			}
+		}
+	}
+	.fullscreen-background {
+		.container {
+			.company-tagline {
+				font-size: 3rem;
+			}
+		}
+	}
+	.filler {
+		padding: 4em 1em;
+		.tagline {
+			font-size: 2rem;
+		}
+		.titlecontainer {
+			.title {
+				font-size: 2rem;
+			}
+		}
+		.container {
+			grid-template-columns: 100%;
+		}
+		.container.about {
+			.quote {
+				font-size: 1.5rem;
+			}
+		}
+		.view-all-button {
+			margin: 1em 0;
+		}
+		.container.audio-sam {
+			.item {
+				margin: 5% 10%;
+			}
+		}
+	}
+}
+@media (max-width: 375px) {
+	.sidenavdrawer {
+		min-width: 14em;
+	}
+	.fullscreen-player {
+		iframe {
+			width: 95%;
+			height: 55%;
+		}
+		object {
+			width: 95%;
+			height: 55%;
+		}
+		embed {
+			width: 95%;
+			height: 55%;
+		}
+		.modal-content {
+			width: 95%;
+		}
+		.close-button {
+			width: 95%;
+		}
+	}
+}
