@@ -12,8 +12,8 @@ $dir='bts_gallery/';
   ?>
 <body>
   <header>
-    <a href="/" class="top-header-logo">
-      <img src="/img/logo_main_white.png" />
+    <a href="index.php" class="top-header-logo">
+      <img src="img/logo_main_white.png" />
       <div class="ub-text">
         <p>URBAN BLUE</p>
         <p>PRODUCTION</p>
@@ -26,37 +26,37 @@ $dir='bts_gallery/';
       <div class="nav-link service-hover" href="#services" onclick="">
         <div>SERVICES</div>
         <div class="dropdown-content">
-          <a href="/music" title="">
+          <a href="music" title="">
             <p>
               <b>MUSIC</b>
               <br>PRODUCTION</p>
           </a>
-          <a href="/videoprod" title="">
+          <a href="videoprod" title="">
             <p>
               <b>VIDEO</b>
               <br>PRODUCTION</p>
           </a>
-          <a href="/studio" title="">
+          <a href="studio" title="">
             <p>
               <b>RECORDING</b>
               <br>STUDIO</p>
           </a>
-          <a href="/mix-master" title="">
+          <a href="mix-master" title="">
             <p>
               <b>MIXING</b>
               <br>MASTERING</p>
           </a>
-          <a href="/photography" title="">
+          <a href="photography" title="">
             <p>
               <b>PHOTOGRAPHY</b>
             </p>
           </a>
-          <a href="/promotion" title="">
+          <a href="promotion" title="">
             <p>
               <b>PROMOTION</b>
             </p>
           </a>
-          <a href="/audiodist" title="">
+          <a href="audiodist" title="">
             <p>
               <b>AUDIO</b>
               <br>DISTRIBUTION</p>
@@ -69,12 +69,12 @@ $dir='bts_gallery/';
       <div class="nav-link service-hover">
         <div>MORE</div>
         <div class="dropdown-content">
-          <a href="/about" title="">
+          <a href="about" title="">
             <p>
               <b>ABOUT US</b>
             </p>
           </a>
-          <a href="/contact" title="" style="border-bottom: 1px solid #cccccc;">
+          <a href="contact" title="" style="border-bottom: 1px solid #cccccc;">
             <p>
               <b>CONTACT US</b>
             </p>
@@ -105,23 +105,23 @@ $dir='bts_gallery/';
       <i class="material-icons md-2" id="close-button-ham" style="display: inline-block; font-size: 2rem; color: #545454;">close</i>
     </div>
     <div class="navlinkcontainer">
-      <a href="/">
+      <a href="index.php">
         <i class="material-icons">home</i>
         <p>HOME</p>
       </a>
-      <a href="/projects">
+      <a href="projects">
         <i class="material-icons">view_carousel</i>
         <p>PROJECTS</p>
       </a>
-      <a href="/">
+      <a href="index.php">
         <i class="material-icons">work</i>
         <p>SERVICES</p>
       </a>
-      <a href="/gallery">
+      <a href="gallery">
         <i class="material-icons">photo</i>
         <p>GALLERY</p>
       </a>
-      <a href="/about">
+      <a href="about">
         <i class="material-icons">info</i>
         <p>ABOUT</p>
       </a>

@@ -41,7 +41,7 @@
           <br><br>Mixing & Mastering is included in all our combos of audio and video production FOC.
           <br><br><b>For seperate Mixing & Mastering on your track:</b></p>
         </div>
-        <a class="view-all-button" href="/projects">Contact Us</a>
+        <a class="view-all-button" href="projects">Contact Us</a>
       </section>
       <section class="filler service-pg" id="services" data-anchor="serivces" style="background: url('img/for_bg_4.jpg'); background-position: right; background-size: cover; background-attachment: fixed; background-repeat: no-repeat; align-items: flex-end;">
         <div class="tagline" style="width: 50%; color: #4DD0E1;"><h2>Mixing Mastering<br>Training</h2></div>
@@ -54,7 +54,7 @@
             <p>FL STUDIO | CUBASE</p>
           </div>
         </div>
-        <a class="view-all-button" href="/projects">Contact Us</a>
+        <a class="view-all-button" href="projects">Contact Us</a>
       </section>
       <section class="filler">
           <div class="titlecontainer" style="margin-top: 5%;">
@@ -71,7 +71,7 @@
                   </div>
                   <div class='detail service' style="background: white;">
                           <audio controls>
-                      <source src="/audio/SampleAudio.mp3">
+                      <source src="audio/SampleAudio.mp3">
                   </audio>
                   </div>
               </div>
@@ -82,7 +82,7 @@
                   </div>
                   <div class='detail service' style="background: white;">
                           <audio controls>
-                      <source src="/audio/SampleAudio.mp3">
+                      <source src="audio/SampleAudio.mp3">
                   </audio>
                   </div>
               </div>

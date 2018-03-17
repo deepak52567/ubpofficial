@@ -14,19 +14,19 @@ include('config.php');
         <div class="showcase-con">
           <div class="image-crousal">
             <div class="crousal-slide fade">
-              <img id="image-showcase" src="/img/gallery/jhoothewadein/1.jpg" />
+              <img id="image-showcase" src="img/gallery/jhoothewadein/1.jpg" />
               <div class="numberText">1/4</div>
             </div>
             <div class="crousal-slide fade">
-              <img id="image-showcase" src="/img/gallery/jhoothewadein/2.jpg" />
+              <img id="image-showcase" src="img/gallery/jhoothewadein/2.jpg" />
               <div class="numberText">2/4</div>
             </div>
             <div class="crousal-slide fade">
-              <img id="image-showcase" src="/img/gallery/jhoothewadein/3.jpg" />
+              <img id="image-showcase" src="img/gallery/jhoothewadein/3.jpg" />
               <div class="numberText">3/4</div>
             </div>
             <div class="crousal-slide fade">
-              <img id="image-showcase" src="/img/gallery/jhoothewadein/4.jpg" />
+              <img id="image-showcase" src="img/gallery/jhoothewadein/4.jpg" />
               <div class="numberText">4/4</div>
             </div>
           </div>

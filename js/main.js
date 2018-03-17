@@ -62,7 +62,7 @@ function testfunc(id) {
 
 function galleryShow() {
 	$.ajax({
-		url: '/showcase.php',
+		url: 'showcase.php',
 		success: function (html) {
 			$('.main').append(html);
 		}

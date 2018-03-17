@@ -37,10 +37,10 @@ $scrollheader = 'href="#services" data-scroll="services"';
                                 and many more.</p>
                         </div>
                         <br>
-                        <a class="view-all-button" href="/projects">Contact Us</a>
+                        <a class="view-all-button" href="projects">Contact Us</a>
                     </div>
                     <div class="left-container">
-                        <img src="/img/Video Production.png">
+                        <img src="img/Video Production.png">
                     </div>
                 </div>
             </div>

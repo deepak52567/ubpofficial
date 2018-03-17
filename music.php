@@ -88,7 +88,7 @@ $scrollheader = 'href="#services" data-scroll="services"';
           </div> -->
       </section>
       <section class="filler service-pg" style="padding-bottom: 0; background: url('img/cover.jpg'); background-position: center; background-size: cover; background-attachment: fixed; background-repeat: no-repeat; justify-content: flex-end;">
-        <a class="view-all-button" style="align-self:center; background: #2f3541;" href="/projects">Contact Us</a>
+        <a class="view-all-button" style="align-self:center; background: #2f3541;" href="projects">Contact Us</a>
       </section>
     </div>
     <?php include('footer.php'); ?>

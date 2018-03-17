@@ -32,9 +32,9 @@
               music into iTunes, Savan, Amazon, Spotify, Shazaam and many digital
               store partners in minimal charges of Rs.500/-.<br><br>Content Copyright facility also included in this audio distribution package for your content Security and Rights.</p>
   					<div class="distributers">
-  						<img src="/img/itunes-logo-transparent.png">
-  						<img src="/img/Saavn-Logo.png">
-  						<img src="/img/amazon-music-logo.png">
+  						<img src="img/itunes-logo-transparent.png">
+  						<img src="img/Saavn-Logo.png">
+  						<img src="img/amazon-music-logo.png">
   					</div>
 				  </div>
         </div>

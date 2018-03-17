@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Barcode+39+Text|Monoton|Megrim " rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://use.fontawesome.com/ae8122e5b2.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-    <link href="/style/main.css" rel="stylesheet" type="text/css" />
-    <link href="/style/mediaquery.css" rel="stylesheet" type="text/css" /> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/mediaquery.css" rel="stylesheet" type="text/css" /> 
     <!-- Begin 33Across SiteCTRL -->
     <script>
     var Tynt=Tynt||[];Tynt.push('cz57PuINKr57mmaKkUFlBU');
